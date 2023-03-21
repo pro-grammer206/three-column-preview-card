@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bright-orange:hsl(31, 77%, 52%);
+    --dark-cyan:hsl(184, 100%, 22%);
+    --very-dark-cyan:hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-tracks: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2rem;
+    width: 400px;
+    height: 700px;
+
+}
+.card h1{
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.card p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+}
+.card button{
+    margin-top:1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    border:0;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+#card1{
+    background-color: var(--bright-orange);
+}
+#card1 button:hover{
+    
+    background-color:var(--bright-orange) ;
+    color:white;
+    border: 1px solid white;
+}
+#card2 button:hover{
+   
+    background-color:var(--dark-cyan) ;
+    color:white;
+    border: 1px solid white;
+
+}
+#card3 button:hover{
+
+    background-color:var(--very-dark-cyan) ;
+    color:white;
+    border: 1px solid white;
+
+}
+#card1 button{
+    color:var(--bright-orange)
+}
+#card2 button{
+    color:var(--dark-cyan)
+}
+#card3 button{
+    color: var(--very-dark-cyan);
+}
+
+#card2{
+    background-color: var(--dark-cyan);
+
+}
+#card3{
+background-color: var(--very-dark-cyan);
+}
+
+h2{
+    font-family: 'Lexend Deca', sans-serif;
+}
+footer{
+    display: none;
+}
+
+@media (max-width:700px){
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .card{
+         border-radius: 10px;
+    }
+}
